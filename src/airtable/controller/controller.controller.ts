@@ -13,13 +13,4 @@ export class ControllerController {
   ) {
     this.airtable.deleteByQuery(baseName, tabName, query);
   }
-
-  @Get('_delete/:base/:tab/:query')
-  public deleteEntries(
-    @Param('base') baseName: string,
-    @Param('tab') tabName: string,
-    @Param('query') query: string,
-  ) {
-    this.airtable.deleteByQuery(baseName, tabName, query);
-  }
 }
