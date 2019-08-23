@@ -13,6 +13,8 @@ steps:
         "run",
         "deploy",
         "webhooks",
+        "--platform",
+        "managed",
         "--image",
         "gcr.io/$PROJECT_ID/webhooks",
         "--region",
